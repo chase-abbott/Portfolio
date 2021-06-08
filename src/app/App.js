@@ -26,18 +26,6 @@ class App extends Component {
                 )}
               />
 
-              <Route path="/resources" exact={true}
-                render={routerProps => (
-                  <div>Implement a page of resources</div>
-                )}
-              />
-
-              <Route path="/resources/:id"
-                render={routerProps => (
-                  <div>Implement a page for id {routerProps.match.params.id}</div>
-                )}
-              />
-
               <Redirect to="/" />
 
             </Switch>
