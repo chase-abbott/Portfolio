@@ -25,7 +25,6 @@ class App extends Component {
                   <Home {...routerProps}/>
                 )}
               />
-
               <Redirect to="/" />
 
             </Switch>
