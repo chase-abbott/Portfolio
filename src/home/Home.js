@@ -7,8 +7,18 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <h2>Home Page</h2>
+        <p className="p-10 text-8xl"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</p>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
+        <h1 className="p-10"> FULL STACK SOFTWARE DEVELOPER BASED IN PORTLAND, OR</h1>
       </div>
+
     );
   }
 
