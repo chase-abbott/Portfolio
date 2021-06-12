@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
@@ -7,16 +7,21 @@ class Header extends Component {
   render() { 
     return (
       <header className="Header fixed w-full">
-        <nav className="grid grid-cols-2 content-between w-full">
+        <nav className="grid grid-cols-3 content-between w-full">
           <h2 className="cursor-pointer text-green-600 p-6 underline">
-            <Link to="/">
+            <NavLink to="/">
             Chase Abbott
-            </Link>
+            </NavLink>
+          </h2>
+          <h2 className="justify-self-center cursor-pointer text-green-600 p-6 underline">
+            <NavLink to="/resume">
+            Resume
+            </NavLink>
           </h2>
           <h2 className="cursor-pointer justify-self-end text-green-600 p-6 underline">
-            <Link to="/about">
+            <NavLink to="/about">
              About 
-            </Link>
+            </NavLink>
           </h2>
         </nav>
 
