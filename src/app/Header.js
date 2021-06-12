@@ -8,12 +8,12 @@ class Header extends Component {
     return (
       <header className="Header fixed w-full">
         <nav className="grid grid-cols-2 content-between w-full">
-          <h2 className="cursor-pointer text-green-600 p-6">
+          <h2 className="cursor-pointer text-green-600 p-6 underline">
             <Link to="/">
             Chase Abbott
             </Link>
           </h2>
-          <h2 className="cursor-pointer justify-self-end text-green-600 p-6">
+          <h2 className="cursor-pointer justify-self-end text-green-600 p-6 underline">
             <Link to="/about">
              About 
             </Link>
