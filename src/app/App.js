@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Home from '../home/Home';
+import Home from '../components/home/home/Home';
+import About from '../components/home/about/About';
 import {
   BrowserRouter as Router,
   Route,
@@ -25,6 +26,13 @@ class App extends Component {
                   <Home {...routerProps}/>
                 )}
               />
+
+              <Route path="/about" exact={true}
+                render={routerProps => (
+                  <About {...routerProps}/>
+                )}
+              />
+              
               <Redirect to="/" />
 
             </Switch>
