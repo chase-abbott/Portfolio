@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from '../components/home/home/Home';
 import About from '../components/home/about/About';
+import Resume from '../components/home/resume/Resume';
 import {
   BrowserRouter as Router,
   Route,
@@ -18,12 +19,17 @@ class App extends Component {
       <div className="App">
         <Router>
           <Header/>
-          <main>
+          <main className="m-8">
 
             <Switch>
               <Route path="/" exact={true}
                 render={routerProps => (
                   <Home {...routerProps}/>
+                )}
+              />
+              <Route path="/resume" exact={true}
+                render={routerProps => (
+                  <Resume {...routerProps}/>
                 )}
               />
 
