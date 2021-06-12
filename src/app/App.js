@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Home from '../components/home/home/Home';
-import About from '../components/home/about/About';
-import Resume from '../components/home/resume/Resume';
+import Home from '../components/home/Home';
+import About from '../components/about/About';
+import Resume from '../components/resume/Resume';
 import {
   BrowserRouter as Router,
   Route,
