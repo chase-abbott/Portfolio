@@ -10,7 +10,7 @@ class Footer extends Component {
   
   render() { 
     return (
-      <footer className="Footer grid grid-rows-2 m-4">
+      <footer className="Footer grid grid-rows-2">
         <div className="grid grid-cols-3 h-4">
           <div className="grid grid-rows-4 justify-center">
             <label className="text-green-600 hover:underline"> 
@@ -31,7 +31,7 @@ class Footer extends Component {
             <button onClick={this.scrollToTop}> Back to Top </button>
           </div>
         </div>
-        <span className="flex justify-self-center text-green-600 text-7xl w-100vw font-black mt-8"> GET IN TOUCH </span>
+        <span className="flex justify-self-center text-green-600 text-7xl w-100vw font-black mt-8"> REACH OUT </span>
       </footer>
     );
   }

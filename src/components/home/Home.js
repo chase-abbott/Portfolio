@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import Projects from '../projects/Projects';
+import data from '../../data/data.js';
 // import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -24,8 +26,8 @@ export default class Home extends Component {
             </span>
           </p>
         </div>
+        <Projects data={data.adventure}/>
       </div>
-
     );
   }
 
