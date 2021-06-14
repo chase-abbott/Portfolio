@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './Footer.css';
+
 
 class Footer extends Component {
 
@@ -10,7 +10,7 @@ class Footer extends Component {
   
   render() { 
     return (
-      <footer className="Footer grid grid-rows-2">
+      <footer className="Footer grid grid-rows-2 max-h-36 font-theme">
         <div className="grid grid-cols-3 h-4">
           <div className="grid grid-rows-4 justify-center">
             <label className="text-green-600 hover:underline"> 
