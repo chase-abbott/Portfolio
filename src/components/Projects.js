@@ -14,6 +14,7 @@ export default class Projects extends Component {
             <label> {data.label} </label>
             <h3 className="text-6xl"> {data.name} </h3>
           </div>
+          <span> {data.tools}</span>
         </container>
        
       </div>
