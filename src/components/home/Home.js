@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import Projects from '../Projects';
+import data from '../../data/data.js';
 // import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -6,8 +8,8 @@ export default class Home extends Component {
   
   render() {
     return (
-      <div className="Home mt-60 ">
-        <div className="grid grid-rows-2 justify-center text-7xl text-green-600 leading-none mb-8">
+      <div className="Home mt-60 font-theme">
+        <div className="grid grid-rows-2 justify-center text-7xl text-green-600 leading-none mb-8 font-bold">
           <span className="flex justify-self-start">FULL STACK</span> 
           <span className="flex justify-self-start ">SOFTWARE DEVLOPER</span> 
           <span className="flex justify-self-start ">BASED IN PORTLAND, OR</span>   
@@ -24,8 +26,9 @@ export default class Home extends Component {
             </span>
           </p>
         </div>
+        <Projects data={data.hoops}/>
+        <Projects data={data.adventure}/>
       </div>
-
     );
   }
 

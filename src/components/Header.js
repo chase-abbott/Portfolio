@@ -1,12 +1,12 @@
 import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css';
+
 
 class Header extends Component {
 
   render() { 
     return (
-      <header className="Header fixed w-full text-xl">
+      <header className="Header fixed w-full text-xl font-theme bg-opacity-90 bg-white">
         <nav className="grid grid-cols-3 content-between w-full">
           <h2 className="cursor-pointer text-green-600 p-6 hover:underline">
             <NavLink to="/">
