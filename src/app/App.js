@@ -1,9 +1,9 @@
 import { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Home from '../components/home/home/Home';
-import About from '../components/home/about/About';
-import Resume from '../components/home/resume/Resume';
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
+import Home from '../components/home/Home';
+import About from '../components/about/About';
+import Resume from '../components/resume/Resume';
 import {
   BrowserRouter as Router,
   Route,
@@ -16,7 +16,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App m-4">
         <Router>
           <Header/>
           <main className="m-8">
