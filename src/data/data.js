@@ -14,7 +14,7 @@ const data = {
     label: '01',
     name: 'Hoops.io',
     description: '',
-    tools: 'React, Socket.io, Express, SQL',
+    tools: 'React, Socket.io, Express, Postgres',
     image: '/Hoops.png',
     URL: 'https://mystifying-bardeen-9951c5.netlify.app/',
     githubBackEnd: 'https://github.com/chase-abbott/Fantasy-Basketball-Server',
