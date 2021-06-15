@@ -9,13 +9,13 @@ export default class Projects extends Component {
         <a href={data.URL} target="_blank" rel="noreferrer">
           <img src={data.image} className="max-w-full" alt={data.name}></img>
         </a>
-        <container>
+        <div>
           <div className="grid grid-cols-projectLabel">
             <label> {data.label} </label>
             <h3 className="text-6xl"> {data.name} </h3>
           </div>
           <span> {data.tools}</span>
-        </container>
+        </div>
        
       </div>
     );
