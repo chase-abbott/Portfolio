@@ -20,8 +20,10 @@ class Header extends Component {
     if (url.pathname === '/'){
       document.getElementById('01').scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else {
+      // try to use .then
       await history.push('/');
       document.getElementById('01').scrollIntoView({ behavior: 'smooth', block: 'center' });
+     
     } 
   }
 
@@ -38,7 +40,9 @@ class Header extends Component {
                 <a href="https://www.linkedin.com/in/chase-abbott/">LinkedIn </a>
               </li>
               <li className="hover:underline w-max">
-                <a href="https://github.com/chase-abbott"> GitHub </a>
+                <a href="https://github.com/chase-abbott"> 
+                  <img src='/GitHub-Mark-32px.png' className="w-max" alt="GitHub"></img>
+                </a>
               </li>
               <li className="hover:underline w-max" onClick={this.scrollToProjects}>Projects</li>
             </ul>

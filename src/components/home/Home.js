@@ -26,8 +26,8 @@ export default class Home extends Component {
             </span>
           </p>
         </div>
-        <Projects data={data.hoops}/>
-        <Projects data={data.adventure}/>
+        <Projects align={'left'} data={data.hoops}/>
+        <Projects align={'right'} data={data.adventure}/>
       </div>
     );
   }
