@@ -18,25 +18,23 @@ class App extends Component {
     return (
       <div className="App m-4">
         <Router>
-          <Header/>
+          <Route
+            component = {Header}
+          />
+          
           <main className="m-8">
 
             <Switch>
-              <Route path="/" exact={true}
-                render={routerProps => (
-                  <Home {...routerProps}/>
-                )}
-              />
-              <Route path="/resume" exact={true}
-                render={routerProps => (
-                  <Resume {...routerProps}/>
-                )}
+              <Route path="/" exact
+                component = {Home}
               />
 
-              <Route path="/about" exact={true}
-                render={routerProps => (
-                  <About {...routerProps}/>
-                )}
+              <Route path="/resume" exact
+                component = {Resume}
+              />
+
+              <Route path="/about" exact
+                component= {About}
               />
               
               <Redirect to="/" />
