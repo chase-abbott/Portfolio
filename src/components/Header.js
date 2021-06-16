@@ -38,7 +38,9 @@ class Header extends Component {
                 <a href="https://www.linkedin.com/in/chase-abbott/">LinkedIn </a>
               </li>
               <li className="hover:underline w-max">
-                <a href="https://github.com/chase-abbott"> GitHub </a>
+                <a href="https://github.com/chase-abbott"> 
+                  <img src='/GitHub-Mark-32px.png' className="w-max"></img>
+                </a>
               </li>
               <li className="hover:underline w-max" onClick={this.scrollToProjects}>Projects</li>
             </ul>
