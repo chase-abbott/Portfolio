@@ -41,7 +41,7 @@ class Header extends Component {
               </li>
               <li className="hover:underline w-max">
                 <a href="https://github.com/chase-abbott"> 
-                  <img src='/GitHub-Mark-32px.png' className="w-max"></img>
+                  <img src='/GitHub-Mark-32px.png' className="w-max" alt="GitHub"></img>
                 </a>
               </li>
               <li className="hover:underline w-max" onClick={this.scrollToProjects}>Projects</li>
