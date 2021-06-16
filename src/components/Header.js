@@ -20,8 +20,10 @@ class Header extends Component {
     if (url.pathname === '/'){
       document.getElementById('01').scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else {
+      // try to use .then
       await history.push('/');
       document.getElementById('01').scrollIntoView({ behavior: 'smooth', block: 'center' });
+     
     } 
   }
 

@@ -4,8 +4,10 @@ import { Component } from 'react';
 class Footer extends Component {
 
   scrollToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
   
   render() { 
