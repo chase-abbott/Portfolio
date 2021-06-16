@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 class Header extends Component {
 
@@ -37,11 +37,11 @@ class Header extends Component {
             <NavLink to="/" className="hover:underline cursor-pointer">Chase Abbott</NavLink>
             <ul id="nav-dropdown" className="hidden grid hover:grid-rows-3">
               <li className="hover:underline w-max">
-                <a href="https://www.linkedin.com/in/chase-abbott/">LinkedIn </a>
+                <h4> <FaLinkedin/> </h4>
               </li>
               <li className="hover:underline w-max">
                 <a href="https://github.com/chase-abbott"> 
-                  <img src='/GitHub-Mark-32px.png' className="w-max" alt="GitHub"></img>
+                  <h4> <FaGithub/> </h4>
                 </a>
               </li>
               <li className="hover:underline w-max" onClick={this.scrollToProjects}>Projects</li>

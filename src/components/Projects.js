@@ -7,11 +7,11 @@ export default class Projects extends Component {
     return (
       <div>
         { (align === 'left') ?
-          <div id={data.label} className="Projects mb-48 font-theme text-green-600 grid grid-cols-2 ">
+          <div id={data.label} className="Projects font-theme text-green-600 grid grid-cols-2 ">
             <a href={data.URL} target="_blank" rel="noreferrer">
               <img src={data.image} className="max-w-full" alt={data.name}></img>
             </a>
-            <div>
+            <div className="flex items-center justify-center flex-col">
               <div className="grid grid-cols-projectLabel">
                 <label> {data.label} </label>
                 <h3 className="text-6xl"> {data.name} </h3>
@@ -19,8 +19,8 @@ export default class Projects extends Component {
               <span> {data.tools}</span>
             </div>
           </div>
-          : <div id={data.label} className="Projects mb-48 font-theme text-green-600 grid grid-cols-2 grid-rows-1">
-            <div>
+          : <div id={data.label} className="Projects font-theme text-green-600 grid grid-cols-2 grid-rows-1">
+            <div className="flex items-center justify-center flex-col">
               <div className="grid grid-cols-projectLabel">
                 <label> {data.label} </label>
                 <h3 className="text-6xl"> {data.name} </h3>
