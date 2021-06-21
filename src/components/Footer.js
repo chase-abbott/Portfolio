@@ -13,7 +13,7 @@ class Footer extends Component {
   render() { 
     return (
       <footer className="Footer grid grid-rows-2 max-h-36 font-theme">
-        <div className="grid grid-cols-3 h-4">
+        <div className="text-xs tablet:text-base grid grid-cols-3 h-4">
           <div className="grid grid-rows-4 justify-center">
             <label className="text-green-600 hover:underline"> 
               <a href="https://github.com/chase-abbott" target="_blank" rel="noreferrer"> GitHub </a>
