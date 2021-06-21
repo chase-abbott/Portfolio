@@ -33,7 +33,7 @@ class Footer extends Component {
             <button onClick={this.scrollToTop}> Back to Top </button>
           </div>
         </div>
-        <span className="flex justify-self-center text-green-600 text-7xl w-100vw font-black mt-8"> REACH OUT </span>
+        <span className="flex justify-self-center text-green-600 text-3xl tablet:text-7xl w-100vw font-black mt-8"> REACH OUT </span>
       </footer>
     );
   }
