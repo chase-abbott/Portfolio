@@ -29,7 +29,7 @@ class Header extends Component {
 
   render() { 
     return (
-      <header className="Header fixed w-full lg:text-xl sm:text-base font-theme bg-opacity-50 bg-white">
+      <header className="Header fixed w-full text-xs tablet:text-base desktop:text-xl font-theme bg-opacity-50 bg-white">
         <nav className="grid grid-cols-3 w-full">
           <h2 className="justify-self-center cursor-pointer text-green-600 p-6 w-max" 
             onMouseEnter={this.handleMouseEnter} 
