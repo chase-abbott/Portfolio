@@ -8,7 +8,7 @@ export default class Home extends Component {
   
   render() {
     return (
-      <div className="Home mt-60 font-theme">
+      <div className="Home mt-32 tablet:mt-60 font-theme">
         <div className="grid grid-rows-2 justify-center iPhone:text-2xl tablet:text-5xl desktop:text-7xl text-green-600 leading-none mb-8 font-bold">
           <span className="flex justify-self-start">FULL STACK</span> 
           <span className="flex justify-self-start ">SOFTWARE DEVLOPER</span> 

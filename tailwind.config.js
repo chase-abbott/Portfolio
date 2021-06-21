@@ -44,6 +44,9 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         'projectLabel': 'auto 1fr'
+      },
+      gridTemplateRows: {
+        'projects': 'auto 1fr'
       }
     },
   },
