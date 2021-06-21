@@ -20,7 +20,7 @@ export default class Projects extends Component {
             </div>
           </div>
           : <div id={data.label} className="Projects font-theme text-green-600 grid grid-rows-projects grid-cols-1 mt-10 tablet:grid-cols-2 tablet:grid-rows-1 tablet:m-0">
-            <div className="flex row-start-2 col-start-2 items-center justify-center flex-col">
+            <div className="flex row-start-2 col-start-2 tablet:row-start-1 tablet:col-start-1 items-center justify-center flex-col">
               <div className="grid grid-cols-projectLabel">
                 <label> {data.label} </label>
                 <h3 className="desktop:text-6xl tablet:text-3xl"> {data.name} </h3>
