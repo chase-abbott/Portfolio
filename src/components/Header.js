@@ -29,15 +29,15 @@ class Header extends Component {
 
   render() { 
     return (
-      <header className="Header fixed w-full text-xl font-theme bg-opacity-50 bg-white">
-        <nav className="grid grid-cols-3 content-between w-full">
-          <h2 className="cursor-pointer text-green-600 p-6 w-max" 
+      <header className="Header fixed w-full lg:text-xl sm:text-base font-theme bg-opacity-50 bg-white">
+        <nav className="grid grid-cols-3 w-full">
+          <h2 className="justify-self-center cursor-pointer text-green-600 p-6 w-max" 
             onMouseEnter={this.handleMouseEnter} 
             onMouseLeave={this.handleMouseLeave}>
             <NavLink to="/" className="hover:underline cursor-pointer">Chase Abbott</NavLink>
             <ul id="nav-dropdown" className="hidden grid hover:grid-rows-3">
               <li className="hover:underline w-max">
-                <h4> <FaLinkedin/> </h4>
+                <h4 className="flex justify-self-center"> <FaLinkedin/> </h4>
               </li>
               <li className="hover:underline w-max">
                 <a href="https://github.com/chase-abbott"> 
@@ -52,7 +52,7 @@ class Header extends Component {
             Resume
             </NavLink>
           </h2>
-          <h2 className="cursor-pointer justify-self-end text-green-600 p-6 hover:underline">
+          <h2 className="cursor-pointer justify-self-center text-green-600 p-6 hover:underline">
             <NavLink to="/about">
              About 
             </NavLink>

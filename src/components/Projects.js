@@ -7,9 +7,9 @@ export default class Projects extends Component {
     return (
       <div>
         { (align === 'left') ?
-          <div id={data.label} className="Projects font-theme text-green-600 grid grid-cols-2 ">
-            <a href={data.URL} target="_blank" rel="noreferrer">
-              <img src={data.image} className="max-w-full" alt={data.name}></img>
+          <div id={data.label} className="Projects font-theme text-green-600 grid grid-cols-2">
+            <a href={data.URL} className="flex justify-center bg-black" target="_blank" rel="noreferrer">
+              <img src={data.image} className="" alt={data.name}></img>
             </a>
             <div className="flex items-center justify-center flex-col">
               <div className="grid grid-cols-projectLabel">
