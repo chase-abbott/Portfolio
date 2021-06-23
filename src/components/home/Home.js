@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Projects from '../Projects';
 import data from '../../data/data.js';
 import Banner from '../Banner';
-import Fade from 'react-reveal/Fade'
+import Fade from 'react-reveal/Fade';
 import './Home.css';
 
 export default class Home extends Component {
@@ -33,7 +33,7 @@ export default class Home extends Component {
             </p>
           </div>
         </Fade>
-        <Banner />
+        <Banner/>
         <Projects align={'left'} data={data.hoops} />
         <Projects align={'right'} data={data.adventure} />
       </div>
