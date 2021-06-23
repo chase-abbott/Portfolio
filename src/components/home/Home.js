@@ -15,8 +15,8 @@ export default class Home extends Component {
     return (
       <div className="Home mt-32 w-full tablet:mt-60 font-theme">
         <Fade bottom cascade>
-        <div className="grid grid-rows-2 justify-center text-2xl w-full tablet:text-5xl desktop:text-7xl text-green-600 leading-none mb-8 font-bold " >
-          <span className="flex justify-self-start animate-fadein">FULL STACK</span> 
+        <div className="grid grid-rows-2 justify-center text-2xl w-full tablet:text-5xl desktop:text-7xl text-green-600 leading-none mb-8 font-bold" >
+          <span className="flex justify-self-start animate-wavey">FULL STACK</span> 
           <span className="flex justify-self-start animate-fadein1_1s">SOFTWARE DEVLOPER</span> 
           <span className="flex justify-self-start animate-fadein1_2s">BASED IN PORTLAND, OR</span>   
         </div>
@@ -34,11 +34,8 @@ export default class Home extends Component {
         </div>
         </Fade>
         <Banner />
-        <Fade bottom cascade>
         <Projects align={'left'} data={data.hoops} />
         <Projects align={'right'} data={data.adventure} />
-        </Fade>
-       
       </div>
     );
   }
