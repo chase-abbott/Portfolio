@@ -47,7 +47,8 @@ module.exports = {
         'projectLabel': 'auto 1fr'
       },
       gridTemplateRows: {
-        'projects': 'auto 1fr'
+        'projects': 'auto 1fr',
+        'footerRows': 'repeat(2, minmax(0, .75fr))'
       }
     },
   },

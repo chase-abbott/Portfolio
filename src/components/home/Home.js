@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Projects from '../Projects';
 import data from '../../data/data.js';
-// import { Link } from 'react-router-dom';
+import Banner from '../Banner';
 import './Home.css';
 
 export default class Home extends Component {
@@ -26,6 +26,7 @@ export default class Home extends Component {
             </span>
           </p>
         </div>
+        <Banner/>
         <Projects align={'left'} data={data.hoops}/>
         <Projects align={'right'} data={data.adventure}/>
       </div>
