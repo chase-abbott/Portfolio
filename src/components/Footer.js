@@ -12,8 +12,8 @@ class Footer extends Component {
   
   render() { 
     return (
-      <footer className="Footer grid grid-rows-footerRows font-theme mt-20">
-        <div className="text-xs tablet:text-base grid grid-cols-3">
+      <footer className="Footer grid grid-rows-footerRows font-theme m-8 tablet:mt-20">
+        <div className="text-tiny tablet:text-base grid grid-cols-3">
           <div className="grid grid-rows-2 justify-center h-max">
             <div className="flex flex-col w-max">
               <label className="text-green-600 hover:underline"> 

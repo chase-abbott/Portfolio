@@ -16,13 +16,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App m-4">
+      <div className="App">
         <Router>
           <Route
             component = {Header}
           />
           
-          <main className="m-4">
+          <main className="m-8">
 
             <Switch>
               <Route path="/" exact
