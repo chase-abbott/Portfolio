@@ -6,13 +6,17 @@ import './Home.css';
 
 export default class Home extends Component {
   
+  addAnimation = (target) => {
+    console.log(target);
+  }
+
   render() {
     return (
       <div className="Home mt-32 w-full tablet:mt-60 font-theme">
-        <div className="grid grid-rows-2 justify-center text-2xl w-full tablet:text-5xl desktop:text-7xl text-green-600 leading-none mb-8 font-bold animate-fadein">
-          <span className="flex justify-self-start">FULL STACK</span> 
-          <span className="flex justify-self-start ">SOFTWARE DEVLOPER</span> 
-          <span className="flex justify-self-start ">BASED IN PORTLAND, OR</span>   
+        <div className="grid grid-rows-2 justify-center text-2xl w-full tablet:text-5xl desktop:text-7xl text-green-600 leading-none mb-8 font-bold " >
+          <span className="flex justify-self-start animate-fadein animate-wavey">FULL STACK</span> 
+          <span className="flex justify-self-start animate-fadein1_1s animate-waveydelay">SOFTWARE DEVLOPER</span> 
+          <span className="flex justify-self-start animate-fadein1_2s animate-waveymoredelay">BASED IN PORTLAND, OR</span>   
         </div>
         <div className=" grid grid-rows-2 text-green-600 tablet:mr-12">
           <p className="grid grid-cols-4 tablet:grid-cols-4 mb-4"> 
@@ -26,9 +30,9 @@ export default class Home extends Component {
             </span>
           </p>
         </div>
-        <Banner/>
-        <Projects align={'left'} data={data.hoops}/>
-        <Projects align={'right'} data={data.adventure}/>
+        <Banner />
+        <Projects align={'left'} data={data.hoops} />
+        <Projects align={'right'} data={data.adventure} />
       </div>
     );
   }
