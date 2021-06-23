@@ -1,36 +1,26 @@
 import React, { Component } from 'react';
-import { IconContext } from 'react-icons';
-import { FaNodeJs, FaReact } from 'react-icons/fa';
-import { DiMongodb, DiPostgresql } from 'react-icons/di';
 
 export default class Banner extends Component {
   
   render() {
     return (
-      <IconContext.Provider value={{ size:'5em' }}>
-        <div className="Banner grid grid-cols-5 bg-opacity-5 bg-black p-4">
-          <label className="flex flex-col items-center">
-            <FaNodeJs/>
-            Node.js
+        <div className="Banner grid grid-cols-5 bg-opacity-5 bg-black p-4 mb-4 ">
+          <label className="flex justify-center ">
+            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="mongodb" className="h-4 tablet:w-auto tablet:h-auto"></img>
           </label>        
-          <label className="flex flex-col items-center">
-            <FaReact/>
-            React
+          <label className="flex justify-center">
+            <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="node.js"></img>
           </label>        
-          <label className="flex flex-col items-center">
-            <DiMongodb/>
-            MongoDb
+          <label className="flex justify-center">
+            <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="react"></img>
           </label>        
-          <label className="flex flex-col items-center">
-            <DiPostgresql/>
-            Postgres
+          <label className="flex justify-center">
+            <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgres"></img>
           </label>        
-          <label className="flex flex-col items-center justify-end">
-            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"></img>
-           Express.js
+          <label className="flex justify-center">
+            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" alt="express.js"></img>
           </label>        
         </div>
-      </IconContext.Provider>
     );
   }
 
