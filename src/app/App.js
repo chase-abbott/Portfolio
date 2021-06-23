@@ -22,7 +22,7 @@ class App extends Component {
             component = {Header}
           />
           
-          <main className="m-8">
+          <main className="m-4">
 
             <Switch>
               <Route path="/" exact
