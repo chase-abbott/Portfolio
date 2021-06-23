@@ -54,9 +54,10 @@ module.exports = {
         fadein : 'fadein .4s ease-in',
         fadein1_1s: 'fadein .5s ease-in',
         fadein1_2s: 'fadein .6s ease-in',
+        fadein1_3s: 'fadein .8s ease-in',
         wavey: 'wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite',
-        waveydelay: 'wave 6.5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 6.5s ease -1.25s infinite',
-        waveymoredelay: 'wave 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 6s ease -1.25s infinite',
+        waveydelay: 'wave 6.5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) 2s infinite, swell 6.5s ease -1.25s infinite',
+        waveymoredelay: 'wave 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) 2s infinite, swell 6s ease -1.25s infinite',
       },
       keyframes: {
         fadein: {
