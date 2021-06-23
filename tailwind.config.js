@@ -69,9 +69,9 @@ module.exports = {
           '100%': { marginleft: '-1600px' }
         },
         swell: {
-          '0%': { transform: 'translate3d(0, -25px ,0)' },
-          '50%': { transform: 'translate3d(0, 5px , 0)' },
-          '100%': { transform: 'translate3d(0, -25px, 0)' }
+          '0%': { transform: 'translate3d(0, -5px ,0)' },
+          '50%': { transform: 'translate3d(0, 2px , 0)' },
+          '100%': { transform: 'translate3d(0, -5px, 0)' }
         }
       }
     },
