@@ -49,6 +49,15 @@ module.exports = {
       gridTemplateRows: {
         'projects': 'auto 1fr',
         'footerRows': 'repeat(2, minmax(0, .75fr))'
+      },
+      animation: {
+        fadein : 'fadein 2s ease-in'
+      },
+      keyframes: {
+        fadein: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 }
+        }
       }
     },
   },
