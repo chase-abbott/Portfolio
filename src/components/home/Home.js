@@ -1,7 +1,8 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import Projects from '../Projects';
 import data from '../../data/data.js';
 import Banner from '../Banner';
+import Fade from 'react-reveal/Fade'
 import './Home.css';
 
 export default class Home extends Component {
@@ -13,6 +14,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home mt-32 w-full tablet:mt-60 font-theme">
+        <Fade bottom cascade>
         <div className="grid grid-rows-2 justify-center text-2xl w-full tablet:text-5xl desktop:text-7xl text-green-600 leading-none mb-8 font-bold " >
           <span className="flex justify-self-start animate-fadein">FULL STACK</span> 
           <span className="flex justify-self-start animate-fadein1_1s">SOFTWARE DEVLOPER</span> 
@@ -30,9 +32,13 @@ export default class Home extends Component {
             </span>
           </p>
         </div>
+        </Fade>
         <Banner />
+        <Fade bottom cascade>
         <Projects align={'left'} data={data.hoops} />
         <Projects align={'right'} data={data.adventure} />
+        </Fade>
+       
       </div>
     );
   }
