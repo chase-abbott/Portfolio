@@ -9,7 +9,6 @@ export default class Projects extends Component {
     const { data, align } = this.props;
 
     return (
-      
       <div className="tablet:mt-36">
         <ParallaxProvider>
           {(align === 'left') ?
@@ -36,6 +35,7 @@ export default class Projects extends Component {
                   </div>
                   <span className="justify-self-end"> {data.tools}</span>
                 </Parallax>
+
               </div>
               <a href={data.URL} className="flex justify-center items-center col-start-2" target="_blank" rel="noreferrer">
                 <img src={data.image} className="tablet:w-3/6 tablet:h-3/6 tablet:mr-96" alt={data.name}></img>
@@ -43,6 +43,7 @@ export default class Projects extends Component {
             </div>
           }
         </ParallaxProvider>
+
       </div>
     );
   }
