@@ -19,29 +19,29 @@ class App extends Component {
       <div className="App">
         <Router>
           <Route
-            component = {Header}
+            component={Header}
           />
-          
-          <main className="m-8">
+
+          <main className="m-4 tablet:m-8">
 
             <Switch>
               <Route path="/" exact
-                component = {Home}
+                component={Home}
               />
 
               <Route path="/resume" exact
-                component = {Resume}
+                component={Resume}
               />
 
               <Route path="/about" exact
-                component= {About}
+                component={About}
               />
-              
+
               <Redirect to="/" />
 
             </Switch>
           </main>
-          <Footer/>
+          <Footer />
         </Router>
       </div>
     );
