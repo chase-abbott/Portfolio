@@ -4,7 +4,7 @@ export default class Banner extends Component {
 
   render() {
     return (
-      <div className="Banner grid grid-cols-5 bg-opacity-5 bg-black p-4 mb-12 ">
+      <div className="Banner grid grid-cols-5 bg-opacity-5 bg-black p-4 ">
         <label className="flex justify-center w-12 h-8 tablet:w-auto tablet:h-auto ">
           <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="postgres"></img>
         </label>
