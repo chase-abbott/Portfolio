@@ -20,6 +20,7 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
+      '8xl': '6rem'
     },
     fontFamily: {
       'theme': 'DM Serif Display, serif'
@@ -37,11 +38,6 @@ module.exports = {
     minHeight: {
       '1/4': '25%'
     },
-    height: {
-      '25vh': '25vh',
-      '33vh': '33vh',
-      '50vh': '50vh'
-    },
     extend: {
       gridTemplateColumns: {
         'projectLabel': 'auto 1fr'
@@ -50,8 +46,11 @@ module.exports = {
         'projects': 'auto 1fr',
         'footerRows': 'repeat(2, minmax(0, .75fr))'
       },
+      height: {
+        '.5vh': '50vh'
+      },
       animation: {
-        fadein : 'fadein .4s ease-in',
+        fadein: 'fadein .4s ease-in',
         fadein1_1s: 'fadein .5s ease-in',
         fadein1_2s: 'fadein .6s ease-in',
         fadein1_3s: 'fadein .8s ease-in',
@@ -61,8 +60,10 @@ module.exports = {
       },
       keyframes: {
         fadein: {
-          '0%': { opacity: 0,
-            transform: 'translateY(24px)' },
+          '0%': {
+            opacity: 0,
+            transform: 'translateY(24px)'
+          },
           '100%': { opacity: 1 }
         },
         wave: {
@@ -78,7 +79,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transform: ['hover']
+    },
   },
   plugins: [],
 };
