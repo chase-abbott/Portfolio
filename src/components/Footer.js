@@ -15,6 +15,10 @@ class Footer extends Component {
   render() { 
     return (
       <footer className="Footer grid grid-rows-footerRows font-theme m-8 tablet:mt-20">
+
+        <Bounce left duration={2000}>
+          <div className="border-solid border-b-2 border-green-600 mb-4"></div>
+        </Bounce>
         <div className="text-tiny tablet:text-base grid grid-cols-3">
 
           <Bounce left cascade>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
-
 export default class Projects extends Component {
 
 
