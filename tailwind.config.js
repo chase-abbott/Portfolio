@@ -45,6 +45,9 @@ module.exports = {
         'projects': 'auto 1fr',
         'footerRows': 'repeat(2, minmax(0, .75fr))'
       },
+      height: {
+        '.5vh': '50vh'
+      },
       animation: {
         fadein: 'fadein .4s ease-in',
         fadein1_1s: 'fadein .5s ease-in',
@@ -75,7 +78,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transform: ['hover']
+    },
   },
   plugins: [],
 };
