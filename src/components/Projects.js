@@ -18,7 +18,7 @@ export default class Projects extends Component {
                 <img src={data.image} className="tablet:w-3/6 tablet:h-3/6 tablet:mr-96" alt={data.name}></img>
               </a>
               <div className="flex items-center justify-center flex-col tablet:absolute tablet:right-80 tablet:bottom-16">
-                <Parallax className="custom-class" y={[-40, 40]} tagOuter="figure">
+                <Parallax className="custom-class" y={[-40, 20]} tagOuter="figure">
                   <div className="grid grid-cols-projectLabel">
                     <label className="tablet:mt-6"> {data.label} </label>
                     <h3 className="desktop:text-8xl tablet:text-3xl"> {data.name} </h3>
