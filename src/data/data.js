@@ -2,7 +2,7 @@
 const data = {
   adventure: {
     label: '03',
-    name: 'Adventure Quest',
+    name: 'Space Adventure',
     description: '',
     tools: 'Vanilla Javascript, CSS',
     image: '/Adventure.png',
