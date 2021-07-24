@@ -1,7 +1,7 @@
 
 const data = {
   adventure: {
-    label: '02',
+    label: '03',
     name: 'Adventure Quest',
     description: '',
     tools: 'Vanilla Javascript, CSS',
@@ -11,7 +11,7 @@ const data = {
     githubURL: 'https://github.com/NickDayFSD/superDuperAdventure'
   },
   hoops: {
-    label: '01',
+    label: '02',
     name: 'Hoops.io',
     description: '',
     tools: 'React, Socket.io, Express, Postgres, Beautiful DnD',
@@ -19,6 +19,16 @@ const data = {
     URL: 'https://mystifying-bardeen-9951c5.netlify.app/',
     githubBackEnd: 'https://github.com/chase-abbott/Fantasy-Basketball-Server',
     githubURL: 'https://github.com/chase-abbott/Fantasy-Basketball'
+  },
+  scrape: {
+    label: '01',
+    name: 'Market Scraper',
+    description: '',
+    tools: 'React Native, Node, Express, Puppeteer',
+    image: '/scraper-background.png',
+    URL: '',
+    githubBackEnd: 'https://github.com/scrape-apes/scrape-back',
+    githubURL: 'https://github.com/scrape-apes/scrape-front'
   }
 };
 

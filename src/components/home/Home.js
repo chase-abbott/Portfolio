@@ -12,7 +12,7 @@ export default class Home extends Component {
     return (
       <div className="Home mt-32 w-full tablet:mt-60 font-theme">
 
-        <Fade bottom cascade>
+        <Fade bottom cascade duration={2000}>
           <div className="grid grid-rows-2 justify-center text-2xl w-full tablet:text-5xl desktop:text-7xl text-green-600 leading-none mb-8 font-bold" >
             <span className="flex justify-self-start">FULL STACK</span>
             <span className="flex justify-self-start">SOFTWARE DEVLOPER</span>
@@ -33,6 +33,7 @@ export default class Home extends Component {
         </Fade>
 
         <Banner />
+        <Projects align={'right'} data={data.scrape} />
         <Projects align={'left'} data={data.hoops} />
         <Projects align={'right'} data={data.adventure} />
       </div>

@@ -45,7 +45,7 @@ class Footer extends Component {
           </Zoom>
 
           <Bounce right>
-            <div className="flex items-end justify-center text-green-600 hover:underline"> 
+            <div className="flex items-end justify-center text-green-600 hover:underline "> 
               <button onClick={this.scrollToTop}> Back to Top </button>
             </div>
           </Bounce>
