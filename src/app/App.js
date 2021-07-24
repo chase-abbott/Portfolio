@@ -12,41 +12,39 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
-class App extends Component {
+function App() {
 
-  render() {
-    return (
-      <div className="App">
-        <Router>
-          <Route
-            component={Header}
-          />
+  return (
+    <div className="App">
+      <Router>
+        <Route
+          component={Header}
+        />
 
-          <main className="m-4 tablet:m-8">
+        <main className="m-4 tablet:m-8">
 
-            <Switch>
-              <Route path="/" exact
-                component={Home}
-              />
+          <Switch>
+            <Route path="/" exact
+              component={Home}
+            />
 
-              <Route path="/resume" exact
-                component={Resume}
-              />
+            <Route path="/resume" exact
+              component={Resume}
+            />
 
-              <Route path="/about" exact
-                component={About}
-              />
+            <Route path="/about" exact
+              component={About}
+            />
 
-              <Redirect to="/" />
+            <Redirect to="/" />
 
-            </Switch>
-          </main>
-          <Footer />
-        </Router>
-      </div>
-    );
-  }
-
+          </Switch>
+        </main>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
+
 
 export default App;
