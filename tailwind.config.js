@@ -9,6 +9,7 @@ module.exports = {
     },
     fontSize: {
       'tiny': '.5rem',
+      'xxs': '.66rem',
       'xs': '.75rem',
       's': '.85rem',
       'base': '1rem',
@@ -48,7 +49,7 @@ module.exports = {
         'footerRows': 'repeat(2, minmax(0, .75fr))'
       },
       height: {
-        '.5vh': '50vh'
+        '.5vh': '50vh',
       },
       animation: {
         fadein: 'fadein .4s ease-in',
