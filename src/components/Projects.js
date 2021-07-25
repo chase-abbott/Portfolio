@@ -9,8 +9,8 @@ export default function Projects({ data, align, setModalData, toggleModal }) {
   };
 
   return (
-    <div className="tablet:mt-36 cursor-pointer" onClick={handleClick}>
-      {(align === 'left') ?
+    <div className="tablet:mt-36 cursor-pointer z-0" onClick={handleClick}>
+      {/* {(align === 'left') ?
         <div id={data.label} className="Projects text-xs tablet:text-base font-theme text-green-600 tablet:h-.5vh tablet:relative">
           <Fade bottom>
             <div className="flex justify-center tablet:justify-start items-center tablet:self-center tablet:w-3/6 tablet:h-3/6 tablet:ml-16">
@@ -28,26 +28,26 @@ export default function Projects({ data, align, setModalData, toggleModal }) {
               </div>
             </div>
           </Fade>
+        </div> : */}
+      <div id={data.label} className="Projects grid text-xs tablet:text-base font-theme text-green-600 tablet:h-.5vh grid-cols-2">
+        {/* <Fade bottom> */}
+        <div className="flex justify-center tablet:justify-start items-center col-start-1 tablet:ml-16">
+          <img src={data.image} alt={data.name} className="w-full"></img>
         </div>
-        : <div id={data.label} className="Projects text-xs tablet:text-base font-theme text-green-600 tablet:h-.5vh grid-rows-projects grid-cols-1 mt-10 tablet:mt-8 tablet:relative">
-          <Fade bottom>
-            <div className="flex justify-center tablet:justify-start items-center col-start-2 tablet:w-3/6 tablet:h-3/6 tablet:ml-16">
-              <img src={data.image} alt={data.name}></img>
+        {/* </Fade> */}
+        {/* <Fade bottom delay={50}> */}
+        <div className="flex flex-col col-start-2 items-center justify-center">
+          <div className="custom-class grid grid-rows-2 justify-center" y={[-40, 40]} tagOuter="figure">
+            <div className="grid grid-cols-projectLabel">
+              <label className="tablet:mt-6"> {data.label} </label>
+              <h3 className="desktop:text-7xl tablet:text-2xl tablet:font-black"> {data.name} </h3>
             </div>
-          </Fade>
-          <Fade bottom delay={50}>
-            <div className="flex row-start-2 col-start-2 items-center justify-center flex-col tablet:absolute tablet:right-1 tablet:bottom-16">
-              <div className="custom-class grid grid-rows-2 justify-center" y={[-40, 40]} tagOuter="figure">
-                <div className="grid grid-cols-projectLabel">
-                  <label className="tablet:mt-6"> {data.label} </label>
-                  <h3 className="desktop:text-8xl tablet:text-3xl tablet:font-black"> {data.name} </h3>
-                </div>
-                <span className="flex justify-self-end"> {data.tools}</span>
-              </div>
-            </div>
-          </Fade>
+            <span className="flex justify-self-end"> {data.tools}</span>
+          </div>
         </div>
-      }
+        {/* </Fade> */}
+      </div>
+      {/* } */}
     </div>
   );
 }

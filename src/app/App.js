@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App z-0">
       <Modal showModal={showModal} 
         toggleModal={toggleModal} 
         modalData={modalData}/>
