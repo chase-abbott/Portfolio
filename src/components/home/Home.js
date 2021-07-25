@@ -3,7 +3,6 @@ import Projects from '../Projects';
 import data from '../../data/data.js';
 import Banner from '../Banner';
 import Fade from 'react-reveal/Fade';
-import Modal from '../Modal';
 import './Home.css';
 
 export default function Home({ toggleModal, showModal, setModalData }) {

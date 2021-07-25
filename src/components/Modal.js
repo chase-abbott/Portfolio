@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '../data/data';
 
 export default function Modal({ modalData, showModal, toggleModal }) {
   
@@ -15,6 +14,14 @@ export default function Modal({ modalData, showModal, toggleModal }) {
             </div>
             <div className="flex flex-col items-center">
               <h2 className="tablet:text-3xl text-green-600 font-theme tablet:mt-4"> {modalData.name} </h2>
+              <h6 className="tablet:text-xl text-green-600 font-theme"> {modalData.tools} </h6>
+              <p> {modalData.description} </p>
+              <div className="flex w-full justify-evenly">
+                <a href={modalData.githubURL} className="text-green-600 font-theme underline" target="_blank" rel="noreferrer"> GitHub </a>
+                {modalData.URL
+                  ? <a href={modalData.URL} className="text-green-600 font-theme underline" target="_blank" rel="noreferrer"> Website </a>
+                  : null}
+              </div>
             </div>
           </div>
         </div>

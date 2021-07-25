@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Modal from './Modal.js';
 
 export default function Projects({ data, align, setModalData, toggleModal }) {
 
