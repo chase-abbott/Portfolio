@@ -3,7 +3,7 @@ const data = {
   adventure: {
     label: '03',
     name: 'Space Adventure',
-    description: '',
+    description: 'Choose your own adventure style game focused on replayability using DnD style random number generators.',
     tools: 'Vanilla Javascript, CSS',
     image: '/Adventure.png',
     URL: 'https://nickdayfsd.github.io/superDuperAdventure/',
@@ -13,7 +13,7 @@ const data = {
   hoops: {
     label: '02',
     name: 'Hoops.io',
-    description: '',
+    description: 'A basketball information hub and fantasy basketball drafting tool',
     tools: 'React, Socket.io, Express, Postgres, Beautiful DnD',
     image: '/Hoops.png',
     URL: 'https://mystifying-bardeen-9951c5.netlify.app/',
@@ -23,7 +23,7 @@ const data = {
   scrape: {
     label: '01',
     name: 'Market Scraper',
-    description: '',
+    description: 'A full stack iOS/Android application that aggregates local marketplace data based on location and search terms.',
     tools: 'React Native, Node, Express, Puppeteer',
     image: '/scraper-background.png',
     URL: '',
