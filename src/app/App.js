@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Home from '../components/home/Home';
@@ -11,42 +11,60 @@ import {
   Redirect
 } from 'react-router-dom';
 import './App.css';
+import Modal from '../components/Modal';
 
-class App extends Component {
+function App() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalData, setModalData] = useState(null);
 
-  render() {
-    return (
-      <div className="App">
-        <Router>
-          <Route
-            component={Header}
-          />
+  const toggleModal = () => {
+    setShowModal(prev => !prev);
+  };
 
-          <main className="m-4 tablet:m-8">
+  return (
+    <div className="App">
+      <Modal showModal={showModal} 
+        toggleModal={toggleModal} 
+        modalData={modalData}/>
+   
+      <Router>
+        <Route
+          render={routerProps => (
+            <Header {...routerProps} 
+              showModal={showModal}
+              toggleModal={toggleModal} />
+          )}
+        />
 
-            <Switch>
-              <Route path="/" exact
-                component={Home}
-              />
+        <main className="m-4 tablet:m-8">
+          <Switch>
+            <Route path="/" exact
+              render={routerProps => (
+                <Home {...routerProps} 
+                  toggleModal={toggleModal} 
+                  showModal={showModal} 
+                  setModalData={setModalData}/>
+              )}
+            />
 
-              <Route path="/resume" exact
-                component={Resume}
-              />
+            <Route path="/resume" exact
+              component={Resume}
+            />
 
-              <Route path="/about" exact
-                component={About}
-              />
+            <Route path="/about" exact
+              component={About}
+            />
 
-              <Redirect to="/" />
+            <Redirect to="/" />
 
-            </Switch>
-          </main>
-          <Footer />
-        </Router>
-      </div>
-    );
-  }
-
+          </Switch>
+        </main>
+        <Footer showModal={showModal} toggleModal={toggleModal}/>
+      </Router>
+      
+    </div>
+  );
 }
+
 
 export default App;
