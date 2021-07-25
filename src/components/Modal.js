@@ -6,7 +6,7 @@ export default function Modal({ modalData, showModal, toggleModal }) {
     <> 
       {showModal
         ? 
-        <div className="flex justify-center w-full h-full items-center fixed bg-black bg-opacity-40">
+        <div className="flex justify-center w-full h-full items-center fixed bg-black bg-opacity-20">
           <div className="grid grid-rows-2 w-6/12 h-4/6 relative z-40 shadow-lg rounded-2xl bg-white">
             <button className="cursor-pointer absolute right-3 top-3 bg-green-600 rounded-full w-6 h-6 text-white" onClick={toggleModal}> X </button>
             <div className="flex">
