@@ -1,7 +1,5 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-
 export default function Projects({ data, align, setModalData, toggleModal }) {
 
   const handleClick = () => {
