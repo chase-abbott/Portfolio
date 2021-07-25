@@ -3,7 +3,7 @@ const data = {
   adventure: {
     label: '03',
     name: 'Space Adventure',
-    description: 'Choose your own adventure style game focused on replayability using DnD style random number generators.',
+    description: 'Choose your own adventure style game focused on replayability using DnD style random number generators. Built by a fully remote team of four over a four day sprint. Focused primarily on creating data models and added an item shop feature.',
     tools: 'Vanilla Javascript, CSS',
     image: '/Adventure.png',
     URL: 'https://nickdayfsd.github.io/superDuperAdventure/',
@@ -13,7 +13,7 @@ const data = {
   hoops: {
     label: '02',
     name: 'Hoops.io',
-    description: 'A basketball information hub and fantasy basketball drafting tool',
+    description: 'A basketball information hub and fantasy basketball drafting tool built by a remote team of three over a four day sprint. Utilized Socket.io to create a live drafting feature, React Beautiful DnD to create drag and drop components, and leveraged Sportsdata.io API for up-to-date basketball statistics. ',
     tools: 'React, Socket.io, Express, Postgres, Beautiful DnD',
     image: '/Hoops.png',
     URL: 'https://mystifying-bardeen-9951c5.netlify.app/',
