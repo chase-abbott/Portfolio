@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Modal from './Modal.js';
 
-export default function Projects({ data, align }) {
+export default function Projects({ data, align, setModalData, toggleModal }) {
+
+  const handleClick = () => {
+    toggleModal();
+    setModalData(data);
+  };
 
   return (
-    <div className="tablet:mt-36">
-      <Modal data={data}/>
+    <div className="tablet:mt-36 cursor-pointer" onClick={handleClick}>
       {(align === 'left') ?
         <div id={data.label} className="Projects text-xs tablet:text-base font-theme text-green-600 tablet:h-.5vh tablet:relative">
           <Fade bottom>

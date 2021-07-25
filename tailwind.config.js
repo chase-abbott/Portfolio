@@ -23,7 +23,7 @@ module.exports = {
       '8xl': '6rem'
     },
     fontFamily: {
-      'theme': 'Inter, sans-serif'
+      'theme': 'Monument Extended Black'
     },
     maxWidth: {
       '1/2': '50%',

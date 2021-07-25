@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Home from '../components/home/Home';
@@ -11,21 +11,40 @@ import {
   Redirect
 } from 'react-router-dom';
 import './App.css';
+import Modal from '../components/Modal';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalData, setModalData] = useState(null);
+
+  const toggleModal = () => {
+    setShowModal(prev => !prev);
+  };
 
   return (
     <div className="App">
+      <Modal showModal={showModal} 
+        toggleModal={toggleModal} 
+        modalData={modalData}/>
+   
       <Router>
         <Route
-          component={Header}
+          render={routerProps => (
+            <Header {...routerProps} 
+              showModal={showModal}
+              toggleModal={toggleModal} />
+          )}
         />
 
         <main className="m-4 tablet:m-8">
-
           <Switch>
             <Route path="/" exact
-              component={Home}
+              render={routerProps => (
+                <Home {...routerProps} 
+                  toggleModal={toggleModal} 
+                  showModal={showModal} 
+                  setModalData={setModalData}/>
+              )}
             />
 
             <Route path="/resume" exact
@@ -40,8 +59,9 @@ function App() {
 
           </Switch>
         </main>
-        <Footer />
+        <Footer showModal={showModal} toggleModal={toggleModal}/>
       </Router>
+      
     </div>
   );
 }
