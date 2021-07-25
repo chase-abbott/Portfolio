@@ -23,7 +23,7 @@ const data = {
   scrape: {
     label: '01',
     name: 'Market Scraper',
-    description: 'A full stack iOS/Android application that aggregates local marketplace data based on location and search terms.',
+    description: 'Created by a remote team of six over a 9 day sprint. Full stack iOS/Android application that aggregates local marketplace data based on location and search terms. Wrote RESTful API routes for authorization and search requests and served as the lead on React Native front end.',
     tools: 'React Native, Node, Express, Puppeteer',
     image: '/scraper-background.png',
     URL: '',
