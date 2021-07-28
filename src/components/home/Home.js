@@ -25,7 +25,7 @@ export default function Home({ toggleModal, showModal, setModalData }) {
               </p>
               <p className="grid grid-cols-4 tablet:grid-cols-4 mb-4">
                 <span className="col-start-2 col-span-3 tablet:col-start-3 tablet:col-span-2 text-xs leading-none tablet:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat cursus sodales. Nam nisi erat, ultricies id rhoncus rutrum, aliquet vel lorem.
+                Right now I am working on creating an Office API using MongoDB, Mongoose, Express, and JSDOM.
                 </span>
               </p>
             </div>
