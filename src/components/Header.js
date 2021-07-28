@@ -11,7 +11,6 @@ export default function Header({ history, toggleModal, showModal }) {
       // try to use .then
       await history.push('/');
       document.getElementById('01').scrollIntoView({ behavior: 'smooth', block: 'center' });
-     
     } 
   };
 

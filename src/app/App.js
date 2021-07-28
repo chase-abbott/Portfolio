@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Home from '../components/home/Home';
@@ -14,25 +14,12 @@ import './App.css';
 import Modal from '../components/Modal';
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
-  const [modalData, setModalData] = useState(null);
-
-  const toggleModal = () => {
-    setShowModal(prev => !prev);
-  };
-
   return (
     <div className="App">
-      <Modal showModal={showModal} 
-        toggleModal={toggleModal} 
-        modalData={modalData}/>
-   
       <Router>
         <Route
           render={routerProps => (
-            <Header {...routerProps} 
-              showModal={showModal}
-              toggleModal={toggleModal} />
+            <Header {...routerProps} />
           )}
         />
 
@@ -40,10 +27,7 @@ function App() {
           <Switch>
             <Route path="/" exact
               render={routerProps => (
-                <Home {...routerProps} 
-                  toggleModal={toggleModal} 
-                  showModal={showModal} 
-                  setModalData={setModalData}/>
+                <Home {...routerProps} />
               )}
             />
 
@@ -55,11 +39,13 @@ function App() {
               component={About}
             />
 
+            <Route path="/details/:label" exact component={Modal}/>
+
             <Redirect to="/" />
 
           </Switch>
         </main>
-        <Footer showModal={showModal} toggleModal={toggleModal}/>
+        <Footer/>
       </Router>
       
     </div>

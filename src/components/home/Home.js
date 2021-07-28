@@ -32,9 +32,9 @@ export default function Home({ toggleModal, showModal, setModalData }) {
           </Fade>
 
           <Banner />
-          <Projects align={'right'} data={data.scrape} showModal={showModal} toggleModal={toggleModal} setModalData={setModalData}/>
-          <Projects align={'left'} data={data.hoops} showModal={showModal} toggleModal={toggleModal} setModalData={setModalData}/>
-          <Projects align={'right'} data={data.adventure} showModal={showModal} toggleModal={toggleModal} setModalData={setModalData}/>
+          <Projects data={data.scrape}/>
+          <Projects data={data.hoops}/>
+          <Projects data={data.adventure}/>
         </div>
         : null
       }
