@@ -15,7 +15,7 @@ export default function Footer({ showModal, toggleModal }) {
   return (
     <>
       {!showModal ?
-        <footer className="Footer grid grid-rows-footerRows font-theme m-8 tablet:mt-20">
+        <footer className="Footer grid grid-rows-footerRows font-theme m-8">
 
           <Bounce left duration={2000}>
             <div className="border-solid border-b border-green-600 mb-4"></div>
