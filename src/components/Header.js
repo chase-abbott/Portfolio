@@ -22,11 +22,11 @@ export default function Header({ history, toggleModal, showModal }) {
             <h2 className="justify-self-center cursor-pointer text-green-600 p-6 w-max" >
               <NavLink to="/" className="hover:underline cursor-pointer" onClick={scrollToProjects}>Chase Abbott</NavLink>
             </h2>
-            <h2 className="justify-self-center cursor-pointer text-green-600 p-6 hover:underline">
-              <NavLink to="/resume">
+            <a href="https://drive.google.com/file/d/1usWMIR1vCZ4Ty1O0aCDhBxal7hKrN1_-/view?usp=sharing" target="_blank" className="justify-self-center cursor-pointer text-green-600 p-6 hover:underline" rel="noreferrer">
+              <h2>             
             Resume
-              </NavLink>
-            </h2>
+              </h2>
+            </a>
             <h2 className="cursor-pointer justify-self-center text-green-600 p-6 hover:underline">
               <NavLink to="/about">
              About 

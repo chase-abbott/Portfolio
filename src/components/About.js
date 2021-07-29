@@ -7,9 +7,9 @@ export default function About() {
       <img 
         src='./Chase (2).jpg' 
         alt="headshot"
-        className="w-6/12 "
+        className="w-6/12 justify-self-end"
       />
-      <p className="flex justify-start items-center col-start-2">
+      <p className="flex justify-start items-center col-start-2 ml-16">
         Full Bio Coming Soon...
       </p>
     </div>
