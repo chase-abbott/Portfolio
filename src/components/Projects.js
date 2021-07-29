@@ -14,11 +14,8 @@ export default function Projects({ data }) {
           </Fade>
           <Fade bottom duration={1000} delay={100}>
             <div className="flex flex-col tablet:col-start-2 items-center justify-center tablet:justify-center">
-              <div className="custom-class grid tablet:grid-rows-2 justify-center" tagOuter="figure">
-                <div className="tablet:grid tablet:grid-cols-projectLabel flex justify-center">
-                  <label className=" tablet:text-s text-tiny tablet:mt-6 tablet:mr-4"> {data.label} </label>
-                  <h3 className="desktop:text-6xl tablet:text-2xl tablet:font-black"> {data.name} </h3>
-                </div>
+              <div className="custom-class grid tablet:grid-rows-2 justify-center" tagOuter="figure">               
+                <h3 className="desktop:text-6xl tablet:text-2xl tablet:font-black"> {data.name} </h3>     
                 <span className="flex justify-self-end"> {data.tools}</span>
               </div>
             </div>
