@@ -29,6 +29,16 @@ const data = {
     URL: '',
     githubBackEnd: 'https://github.com/scrape-apes/scrape-back',
     githubURL: 'https://github.com/scrape-apes/scrape-front'
+  },
+  zilch: {
+    label: '04',
+    name: 'Zilch 2.0',
+    description: 'Zilch 2.0 is an interactive multiplayer browser game of chance and skill; based on Zilch, the dice game.',
+    tools: 'React, Node, Express, PostgreSQL, Socket.io, Redis',
+    image: '',
+    URL: 'https://zilch-v2.netlify.app/lobby',
+    githubBackEnd: 'https://github.com/etvvas/zilch-2.0-be',
+    githubURL: 'https://github.com/etvvas/zilch-2.0-fe'
   }
 };
 
