@@ -38,7 +38,7 @@ function App() {
             component={About}
           />
 
-          <Route path="/details/:label" exact component={Modal}/>
+          <Route path="/details/:name" exact component={Modal}/>
 
           <Redirect to="/" />
 

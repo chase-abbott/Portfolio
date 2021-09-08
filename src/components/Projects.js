@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Projects({ data }) {
 
   return (
-    <Link to={`/details/${data.label}`}>
+    <Link to={`/details/${data.name}`}>
       <div className="tablet:mt-32 cursor-pointer p-4 tablet:p-0">
         <div id={data.label} className="Projects grid text-xs tablet:text-base font-theme text-green-600 tablet:h-full tablet:grid-cols-2">
           <Fade bottom duration={1000}>

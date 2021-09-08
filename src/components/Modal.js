@@ -6,9 +6,9 @@ export default function Modal({ match }) {
   
   useEffect(() => {
     for (const project in data){
-      if (data[project].label === match.params.label) return setComponentData(data[project]);
+      if (data[project].name === match.params.name) return setComponentData(data[project]);
     }
-  }, [match.params.label]);
+  }, [match.params.name]);
 
   return (
     <>
