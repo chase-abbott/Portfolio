@@ -11,7 +11,7 @@ export default function Projects({ data }) {
         <div id={data.label} className="Projects grid text-xs tablet:text-base font-theme text-green-600 tablet:h-full tablet:grid-cols-2">
           <Fade bottom duration={1000}>
             <div className="flex justify-center tablet:justify-start items-center tablet:col-start-1">
-              <img src={data.image} alt={data.name} className="w-full"></img>
+              <img src={data.image} alt={data.name} className="w-full h-40 tablet:h-96"></img>
             </div>
           </Fade>
           <Fade bottom duration={1000} delay={100}>
