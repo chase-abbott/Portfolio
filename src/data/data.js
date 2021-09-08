@@ -35,7 +35,7 @@ const data = {
     name: 'Zilch 2.0',
     description: 'Zilch 2.0 is an interactive multiplayer browser game of chance and skill; based on Zilch, the dice game.',
     tools: 'React, Node, Express, PostgreSQL, Socket.io, Redis',
-    image: '',
+    image: '/Zilch.PNG.png',
     URL: 'https://zilch-v2.netlify.app/lobby',
     githubBackEnd: 'https://github.com/etvvas/zilch-2.0-be',
     githubURL: 'https://github.com/etvvas/zilch-2.0-fe'

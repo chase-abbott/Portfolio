@@ -30,9 +30,9 @@ export default function Home() {
       </Fade>
 
       <Banner />
+      <Projects data={data.zilch}/>
       <Projects data={data.scrape}/>
       <Projects data={data.hoops}/>
-      <Projects data={data.adventure}/>
     </div>
   );
 }

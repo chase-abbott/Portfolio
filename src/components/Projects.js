@@ -7,8 +7,8 @@ export default function Projects({ data }) {
 
   return (
     <Link to={`/details/${data.label}`}>
-      <div className="tablet:mt-36 cursor-pointer">
-        <div id={data.label} className="Projects grid text-xs tablet:text-base font-theme text-green-600 tablet:h-.5vh tablet:grid-cols-2 mt-12">
+      <div className="tablet:mt-32 cursor-pointer">
+        <div id={data.label} className="Projects grid text-xs tablet:text-base font-theme text-green-600 tablet:h-full tablet:grid-cols-2">
           <Fade bottom duration={1000}>
             <div className="flex justify-center tablet:justify-start items-center tablet:col-start-1">
               <img src={data.image} alt={data.name} className="w-full"></img>
