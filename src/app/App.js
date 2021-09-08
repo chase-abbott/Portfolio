@@ -15,40 +15,38 @@ import Modal from '../components/Modal';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Route
-          render={routerProps => (
-            <Header {...routerProps} />
-          )}
-        />
+    <Router>
+      <Route
+        render={routerProps => (
+          <Header {...routerProps} />
+        )}
+      />
 
-        <main className="m-4 tablet:m-8">
-          <Switch>
-            <Route path="/" exact
-              render={routerProps => (
-                <Home {...routerProps} />
-              )}
-            />
-            {/* 
+      <main className="m-4 h-full tablet:m-8">
+        <Switch>
+          <Route path="/" exact
+            render={routerProps => (
+              <Home {...routerProps} />
+            )}
+          />
+          {/* 
             <Route path="/resume" exact
               component={Resume}
             /> */}
 
-            <Route path="/about" exact
-              component={About}
-            />
+          <Route path="/about" exact
+            component={About}
+          />
 
-            <Route path="/details/:label" exact component={Modal}/>
+          <Route path="/details/:name" exact component={Modal}/>
 
-            <Redirect to="/" />
+          <Redirect to="/" />
 
-          </Switch>
-        </main>
-        <Footer/>
-      </Router>
+        </Switch>
+      </main>
+      <Footer/>
+    </Router>
       
-    </div>
   );
 }
 
