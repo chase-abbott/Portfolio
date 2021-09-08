@@ -7,7 +7,7 @@ export default function Projects({ data }) {
 
   return (
     <Link to={`/details/${data.label}`}>
-      <div className="tablet:mt-32 cursor-pointer">
+      <div className="tablet:mt-32 cursor-pointer p-4 tablet:p-0">
         <div id={data.label} className="Projects grid text-xs tablet:text-base font-theme text-green-600 tablet:h-full tablet:grid-cols-2">
           <Fade bottom duration={1000}>
             <div className="flex justify-center tablet:justify-start items-center tablet:col-start-1">
@@ -17,7 +17,7 @@ export default function Projects({ data }) {
           <Fade bottom duration={1000} delay={100}>
             <div className="flex flex-col tablet:col-start-2 items-center justify-center tablet:justify-center">
               <div className="custom-class grid tablet:grid-rows-2 justify-center" tagOuter="figure">               
-                <h3 className="desktop:text-6xl tablet:text-2xl tablet:font-black"> {data.name} </h3>     
+                <h3 className="desktop:text-6xl tablet:text-2xl text-xl tablet:font-black"> {data.name} </h3>     
                 <span className="flex justify-self-end"> {data.tools}</span>
               </div>
             </div>
